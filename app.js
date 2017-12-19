@@ -15,6 +15,12 @@ function onReady() {
     //create a new li
     let checkbox = document.createElement('input');
 
+    //create remove button
+    let button = document.createElement('button');
+
+    //create button text
+    let btnName = document.createTextNode('remove');
+
     // set the input's type to checkbox
     checkbox.type = "checkbox";
 
@@ -24,11 +30,18 @@ function onReady() {
     // attach the checkbox to the li
     newLi.appendChild(checkbox);
 
-    // attsch the li to the ul
+    // attach the button to the li
+    newLi.appendChild(button);
+
+    // attach text to button
+    button.appendChild(btnName);
+
+    // attach the li to the ul
     toDoList.appendChild(newLi);
 
-    //empty te input
+    //empty the input
     newToDoText.value = '';
+
   });
 }
 
