@@ -9,7 +9,7 @@ function onReady() {
   addToDoForm.addEventListener("submit", event => {
 
     // prevent default behavior of page reload when submit event is triggered
-    event.preventDefault();
+  event.preventDefault();
 
     // get the text input when submit event is triggered
     let title = newToDoText.value;
